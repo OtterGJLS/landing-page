@@ -1,13 +1,12 @@
 /* Font Declaration */
 .header-1 {
     font-size: 48px;
-    color: var(--navy);
     font-family: var(--font-2);
 }
 
 .header-2 {
     font-size: 36px;
-    font-family: var(--font-1);
+    font-family: var(--font-2);
 }
 
 .header-3 {
@@ -16,8 +15,8 @@
 }
 
 .header-4 {
-    font-size: 20px;
-    font-family: var(--font-1);
+    font-size: 24px;
+    font-family: var(--font-2);
 }
 
 .body-1 {
@@ -25,14 +24,13 @@
     font-family: var(--font-2);
 }
 
-.body-1-hero{
-    font-size: 18px;
-    color: var(--accent);
+.body-1-card{
+    font-size: 16px;
     font-family: var(--font-2);
 }
 
 .body-2 {
-    font-size: 12px;
+    font-size: 14px;
     font-family: var(--font-2);
 }
 /* End Font Declaration */

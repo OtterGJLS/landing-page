@@ -2,7 +2,7 @@
 :root {
     --primary: #2A363B;
     --accent: #007BFF;
-    --neutral: #F8F9FA;
+    --neutral: #FBFCFD;
     --text: #333333;
     --grey: #5A5A5A;
     --white: #ffffff;
@@ -37,46 +37,46 @@ html, body {
 .btn-primary {
     background-color: var(--accent);
     font-family: var(--font-2);
-    font-weight: 600;
+    font-weight: 400;
     color: var(--white);
     transition: var(--transition);
-    font-size: 16px;
+    font-size: 18px;
     border-color: var(--accent);
-    padding: 12px 24px;
+    padding: 8px 124px;
 }
 
 .btn-primary:hover {
     background-color: var(--accent);
     color: var(--white);
-    filter: brightness(90%);
+    filter: brightness(70%);
 }
 
 .btn-secondary {
     background-color: var(--success);
     font-family: var(--font-2);
-    font-weight: 600;
+    font-weight: 400;
     color: var(--white);
     transition: var(--transition);
-    font-size: 16px;
+    font-size: 18px;
     border-color: var(--success);
-    padding: 12px 24px;
+    padding: 8px 16px;
 }
 
 .btn-secondary:hover {
     background-color: var(--success);
     color: var(--white);
-    filter: brightness(90%);
+    filter: brightness(70%);
 }
 
 
 /* Navbar */
 .navbar {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-scrolled {
     background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .logo {

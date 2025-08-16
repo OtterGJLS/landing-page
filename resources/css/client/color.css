@@ -29,3 +29,7 @@
 .color-navy {
     color: var(--navy);
 }
+
+.color-neutral {
+    color: var(--neutral);
+}

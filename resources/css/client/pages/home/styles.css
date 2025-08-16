@@ -45,6 +45,12 @@
     text-align: center;
 }
 
+.keunggulan-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
 .keunggulan-ic-container {
     width: 70px;
     height: 70px;
@@ -73,6 +79,12 @@
     transition: var(--transition);
 }
 
+#layanan .card .card-body img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
 #layanan .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
@@ -89,6 +101,7 @@
 #alur {
     padding-top: 80px;
     padding-bottom: 80px;
+    background-color: var(--navy);
 }
 
 .alur-step {

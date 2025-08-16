@@ -3,12 +3,14 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="{{ $description ?? 'Laptop Service' }}">
-        <meta name="author" content="{{ $author ?? 'Laptop Service' }}">
+        <meta name="description" content="{{ $description ?? 'LaptopService' }}">
+        <meta name="author" content="{{ $author ?? 'LaptopService' }}">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ $title ?? 'Laptop Service' }}</title>
+        <title>{{ $title ?? 'LaptopService' }}</title>
 
+        {{-- Favicon --}}
+        <link rel="icon" href="{{ Vite::asset('resources/images/VectorLaptop.png') }}" type="image/png">
         {{-- Start Style --}}
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />

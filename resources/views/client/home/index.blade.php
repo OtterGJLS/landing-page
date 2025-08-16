@@ -3,12 +3,11 @@
         <div class="container">
             <div class="row align-items-center justify-content-center text-center text-lg-start">
                 <section class="col-lg-7">
-                    <h1 class="header-1 fw-bold">Service Laptop Cepat,</h1>
-                    <h1 class="header-1 fw-bold mb-4">Jujur, dan Bergaransi</h1>
-                    <p class="body-1-hero mb-4 lead">Kami siap menyelamatkan perangkat Anda, dari laptop biasa hingga gaming.</p>
+                    <h1 class="header-1 color-navy fw-bold mb-4">Service Laptop Cepat,<br>Jujur, dan Bergaransi</h1>
+                    <p class="body-1 color-accent mb-4 lead">Kami siap menyelamatkan perangkat Anda, dari laptop biasa hingga gaming.</p>
                     <a href="#kontak" class="btn btn-primary me-2 mb-2">Konsultasi Gratis</a>
                     <a href="https://api.whatsapp.com/send/?phone=6287823330830&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-secondary mb-2">
-                        <i class="fab fa-whatsapp me-2"></i>Hubungi via WhatsApp
+                        <i class="fab fa-whatsapp me-2"></i>Chat via WhatsApp
                     </a>
                 </section>
                 <section class="col-lg-5 d-none d-lg-block">
@@ -20,22 +19,27 @@
 
     <section id="keunggulan">
         <div class="container">
+            <h2 class="header-2 color-neutral fw-bold mb-5 text-center">Kenapa Memilih Kami?</h2>
             <div class="row text-center gy-4">
                 <div class="col-md-3 col-6 keunggulan-item">
-                    <div class="keunggulan-ic-container"><i class="fas fa-check-circle"></i></div>
-                    <h3 class="body-1 color-white fw-semibold">Garansi Service</h3>
+                    <img src="{{ Vite::asset('resources\images\garansi.png') }}" class="img-fluid mb-4" alt="garansi">
+                    <h3 class="body-1 color-neutral lead mb-2">Garansi Service</h3>
+                    <p class="body-2 color-neutral lead" >Garansi hingga 30 hari setelah service.</p>
                 </div>
                 <div class="col-md-3 col-6 keunggulan-item">
-                    <div class="keunggulan-ic-container"><i class="fas fa-users-cog"></i></div>
-                    <h3 class="body-1 color-white fw-semibold">Teknisi Ahli</h3>
+                    <img src="{{ Vite::asset('resources\images\teknisi.png') }}" class="img-fluid mb-4" alt="teknisi">
+                    <h3 class="body-1 color-neutral lead mb-2">Teknisi Berpengalaman</h3>
+                    <p class="body-2 color-neutral lead" >Dikerjakan oleh teknisi profesional.</p>
                 </div>
                 <div class="col-md-3 col-6 keunggulan-item">
-                    <div class="keunggulan-ic-container"><i class="fas fa-microchip"></i></div>
-                    <h3 class="body-1 color-white fw-semibold">Sparepart Original</h3>
+                    <img src="{{ Vite::asset('resources\images\gear.png') }}" class="img-fluid mb-4" alt="sparepart">
+                    <h3 class="body-1 color-neutral lead mb-2">Sparepart Original</h3>
+                    <p class="body-2 color-neutral lead" >Hanya menggunakan komponen original.</p>
                 </div>
                 <div class="col-md-3 col-6 keunggulan-item">
-                    <div class="keunggulan-ic-container"><i class="fas fa-search"></i></div>
-                    <h3 class="body-1 color-white fw-semibold">Gratis Cek</h3>
+                    <img src="{{ Vite::asset('resources\images\konsul.png') }}" class="img-fluid mb-4" alt="konsultasi">
+                    <h3 class="body-1 color-neutral lead mb-2">Gratis Cek & Konsultasi</h3>
+                    <p class="body-2 color-neutral lead" >Konsultasi bebas biaya, langsung WA.</p>
                 </div>
             </div>
         </div>
@@ -43,37 +47,42 @@
 
     <section id="layanan">
         <div class="container">
-            <h2 class="header-2 color-primary fw-semibold mb-5 text-center">Layanan Kami</h2>
-            <div class="row gx-4 gy-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="card h-100 shadow-sm">
+            <h2 class="header-2 color-navy fw-bold mb-2 text-center">Semua Kebutuhan Service dalam Satu Tempat</h2>
+            <p class="body-1 color-navy fw-normal mb-5 text-center">Solusi lengkap untuk semua masalah perangkat elektronik Anda</p>
+            <div class="row gx-4 gy-4 justify-content-center">
+                <div class="col-lg-5 col-md-6">
+                    <div class="card h-100 shadow">
                         <div class="card-body">
-                            <h3 class="card-title header-4 fw-medium mb-3"><i class="fas fa-laptop"></i>Service Hardware</h3>
-                            <p class="body-1 color-grey">Ganti LCD, keyboard, baterai, upgrade RAM/SSD, perbaikan motherboard, dan lainnya.</p>
+                            <img src="{{ Vite::asset('resources\images\hardware.png') }}" class="img-fluid mx-auto d-block mb-5" alt="sparepart">
+                            <h3 class="card-title header-4 color-accent fw-semibold mb-3 text-center">Service Hardware</h3>
+                            <p class="body-1-card color-navy text-center">Ganti LCD, keyboard, upgrade RAM/SSD, dll.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card h-100 shadow-sm">
+                <div class="col-lg-5 col-md-6">
+                    <div class="card h-100 shadow">
                         <div class="card-body">
-                            <h3 class="card-title header-4 fw-medium mb-3"><i class="fas fa-cogs"></i>Service Software</h3>
-                            <p class="body-1 color-grey">Install ulang Windows/Mac, recovery data, pembersihan virus, dan optimasi sistem.</p>
+                            <img src="{{ Vite::asset('resources\images\software.png') }}" class="img-fluid mx-auto d-block mb-5" alt="software">
+                            <h3 class="card-title header-4 color-accent fw-semibold mb-3 text-center">Service Software</h3>
+                            <p class="body-1-card color-navy text-center">Install ulang, recovery data, pasang antivirus.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card h-100 shadow-sm">
+                <div class="col-lg-5 col-md-6">
+                    <div class="card h-100 shadow">
                         <div class="card-body">
-                            <h3 class="card-title header-4 fw-medium mb-3"><i class="fas fa-wind"></i>Maintenance</h3>
-                            <p class="body-1 color-grey">Pembersihan debu pada kipas dan komponen internal untuk mencegah overheat.</p>
+                            <img src="{{ Vite::asset('resources\images\clean.png') }}" class="img-fluid mx-auto d-block mb-5" alt="maintenance">
+                            <h3 class="card-title header-4 color-accent fw-semibold mb-3 text-center">Maintenance & Cleaning</h3>
+                            <p class="body-1-card color-navy text-center">Bersihkan laptop dari debu, thermal paste, dll.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card h-100 shadow-sm">
+                <div class="col-lg-5 col-md-6">
+                    <div class="card h-100 shadow">
                         <div class="card-body">
-                            <h3 class="card-title header-4 fw-medium mb-3"><i class="fas fa-print"></i>Perangkat Lain</h3>
-                            <p class="body-1 color-grey">Kami juga melayani perbaikan PC All-in-One, rakit PC, dan service printer.</p>
+                            <img src="{{ Vite::asset('resources\images\printer.png') }}" class="img-fluid mx-auto d-block mb-5" alt="perangkat lain">
+                            <h3 class="card-title header-4 color-accent fw-semibold mb-3 text-center">Service Printer & PC</h3>
+                            <p class="body-1-card color-navy text-center">Untuk printer rumah/kantor, juga PC rakitan.</p>
                         </div>
                     </div>
                 </div>
@@ -81,15 +90,17 @@
         </div>
     </section>
 
-    <section id="alur">
+    <section id="alur" style="background-color: var(--accent); background-image: url('{{ Vite::asset('resources/images/BG.png') }}'); background-size: cover; background-position: center;">
         <div class="container">
-            <h2 class="header-2 color-primary fw-semibold mb-5 text-center">Proses Service Kami</h2>
+            <!-- <img src="{{ Vite::asset('resources\images\BG.png') }}" class="img-fluid" alt="bg-alur">         -->
+            <h2 class="header-2 color-neutral fw-bold mb-2 text-center">Alur Service Step by Step</h2>
+            <p class="body-1 color-neutral fw-normal text-center mb-5" >Proses service laptop yang mudah dan terpercaya dari awal sampai akhir</p>
             <div class="row gy-4">
-                <div class="col alur-step"><div class="alur-step-number">1</div><p class="body-1 fw-medium">Konsultasi</p></div>
-                <div class="col alur-step"><div class="alur-step-number">2</div><p class="body-1 fw-medium">Kirim/Antar Unit</p></div>
-                <div class="col alur-step"><div class="alur-step-number">3</div><p class="body-1 fw-medium">Diagnosa</p></div>
-                <div class="col alur-step"><div class="alur-step-number">4</div><p class="body-1 fw-medium">Perbaikan</p></div>
-                <div class="col alur-step"><div class="alur-step-number">5</div><p class="body-1 fw-medium">Selesai!</p></div>
+                <div class="col alur-step"><div class="alur-step-number">1</div><p class="body-1 fw-medium color-neutral">Konsultasi Gratis</p></div>
+                <div class="col alur-step"><div class="alur-step-number">2</div><p class="body-1 fw-medium color-neutral">Kirim / Titip Laptop</p></div>
+                <div class="col alur-step"><div class="alur-step-number">3</div><p class="body-1 fw-medium color-neutral">Diagnosa Kerusakan</p></div>
+                <div class="col alur-step"><div class="alur-step-number">4</div><p class="body-1 fw-medium color-neutral">Perbaikan</p></div>
+                <div class="col alur-step"><div class="alur-step-number">5</div><p class="body-1 fw-medium color-neutral">Laptop Siap Diambil</p></div>
             </div>
         </div>
     </section>
