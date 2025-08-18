@@ -24,12 +24,10 @@
 }
 
 .hero-img {
-    width: 541px;
-    height: 337px;
-    top: 126px;
-    left: 851px;
-    /* max-width: 450px; */
+    width: 100%;
+    height: auto;
     border-radius: var(--border-radius);
+    object-fit: contain;
 }
 /* End Hero Section */
 
@@ -101,42 +99,65 @@
 #alur {
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color: var(--navy);
-}
-
-.alur-step {
-    text-align: center;
-    position: relative;
-}
-
-.alur-step-number {
-    width: 50px;
-    height: 50px;
     background-color: var(--accent);
-    color: var(--white);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 24px;
-    margin: 0 auto 16px;
-    border: 3px solid var(--neutral);
 }
-/* End Alur Section */
 
+/* Alur Card */
+#alur .card {
+    border-radius: 15px;
+}
+
+#alur .card-body {
+    padding: 2rem;
+}
+
+#alur hr {
+    border-top: 3px solid var(--navy);
+}
+
+/* End Alur Section */
+#proses {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--neutral);
+}
+
+#proses .card {
+    border: none;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+#proses .card .card-body iframe {
+    height: 250px;
+    width: 80%;
+    border-radius: var(--border-radius);
+    object-fit: contain;
+}
+
+#proses .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+#proses .card-title i {
+    color: var(--accent);
+    margin-right: 12px;
+}
+/* End Proses Section */
 
 /* Promo Section */
 #promo {
-    padding: 80px 0;
-    background-color: var(--accent);
-    color: var(--white);
+    padding: 40px 0;
+    background-color: var(--neutral);
 }
 
 #promo .card {
     background-color: rgba(255, 255, 255, 0.1);
-    color: var(--white);
-    border: 1px solid var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+
 }
 
 /* Testimoni */

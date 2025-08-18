@@ -4,6 +4,7 @@
             <div class="row align-items-center justify-content-center text-center text-lg-start">
                 <section class="col-lg-7">
                     <h1 class="header-1 color-navy fw-bold mb-4">Service Laptop Cepat,<br>Jujur, dan Bergaransi</h1>
+                    <img src="{{ Vite::asset('resources\images\HeroImage.png') }}" class="img-fluid d-none hero-img" alt="Teknisi sedang bekerja">
                     <p class="body-1 color-accent mb-4 lead">Kami siap menyelamatkan perangkat Anda, dari laptop biasa hingga gaming.</p>
                     <a href="#kontak" class="btn btn-primary me-2 mb-2">Konsultasi Gratis</a>
                     <a href="https://api.whatsapp.com/send/?phone=6287823330830&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-secondary mb-2">
@@ -11,7 +12,7 @@
                     </a>
                 </section>
                 <section class="col-lg-5 d-none d-lg-block">
-                    <img src="{{ Vite::asset('resources\images\HeroImage.png') }}" class="img-fluid hero-img" alt="Teknisi sedang bekerja">
+                    <img src="{{ Vite::asset('resources\images\HeroImage.png') }}" class="img-fluid mb-32 mx-auto d-block hero-img" alt="Teknisi sedang bekerja">
                 </section>
             </div>
         </div>
@@ -89,39 +90,145 @@
             </div>
         </div>
     </section>
-
-    <section id="alur" style="background-color: var(--accent); background-image: url('{{ Vite::asset('resources/images/BG.png') }}'); background-size: cover; background-position: center;">
+<!-- style="background-image: url('{{ Vite::asset('resources/images/BG.svg') }}'); background-size: cover; background-position: center;" -->
+    <section id="alur">
         <div class="container">
-            <!-- <img src="{{ Vite::asset('resources\images\BG.png') }}" class="img-fluid" alt="bg-alur">         -->
             <h2 class="header-2 color-neutral fw-bold mb-2 text-center">Alur Service Step by Step</h2>
             <p class="body-1 color-neutral fw-normal text-center mb-5" >Proses service laptop yang mudah dan terpercaya dari awal sampai akhir</p>
-            <div class="row gy-4">
-                <div class="col alur-step"><div class="alur-step-number">1</div><p class="body-1 fw-medium color-neutral">Konsultasi Gratis</p></div>
-                <div class="col alur-step"><div class="alur-step-number">2</div><p class="body-1 fw-medium color-neutral">Kirim / Titip Laptop</p></div>
-                <div class="col alur-step"><div class="alur-step-number">3</div><p class="body-1 fw-medium color-neutral">Diagnosa Kerusakan</p></div>
-                <div class="col alur-step"><div class="alur-step-number">4</div><p class="body-1 fw-medium color-neutral">Perbaikan</p></div>
-                <div class="col alur-step"><div class="alur-step-number">5</div><p class="body-1 fw-medium color-neutral">Laptop Siap Diambil</p></div>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-4 col-lg-4 mb-4">
+                    <div class="card border-2 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="header-4 color-navy fw-semibold mb-3">Step 1</h3>
+                            <div class="justify-content-center d-flex mb-2">
+                                <img src="{{ Vite::asset('resources\images\chat-dots.png') }}" class="img-fluid mb-2" alt="konsultasi">
+                            </div>
+                            <hr class="w-25 mx-auto my-2 mb-4">
+                            <h4 class="header-4 color-accent fw-semibold mb-3">Konsultasi Gratis</h4>
+                            <p class="body-1-card color-navy">Hubungi via WhatsApp atau isi form di website untuk konsultasi awal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mb-4">
+                    <div class="card border-2 shadow-sm ">
+                        <div class="card-body p-4">
+                            <h3 class="header-4 color-navy fw-semibold mb-3">Step 2</h3>
+                            <div class="justify-content-center d-flex mb-2">
+                                <img src="{{ Vite::asset('resources\images\box2.png') }}" class="img-fluid mb-2" alt="konsultasi">
+                            </div>
+                            <hr class="w-25 mx-auto my-2 mb-4">
+                            <h4 class="header-4 color-accent fw-semibold mb-3">Kirim / Titip Laptop</h4>
+                            <p class="body-1-card color-navy">Antar langsung ke workshop atau gunakan layanan jemput (jika tersedia)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mb-4">
+                    <div class="card border-2 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="header-4 color-navy fw-semibold mb-3">Step 3</h3>
+                            <div class="justify-content-center d-flex mb-2">
+                                <img src="{{ Vite::asset('resources\images\search.png') }}" class="img-fluid mb-2" alt="konsultasi">
+                            </div>
+                            <hr class="w-25 mx-auto my-2 mb-4">
+                            <h4 class="header-4 color-accent fw-semibold mb-3">Diagnosa Kerusakan</h4>
+                            <p class="body-1-card color-navy">Teknisi melakukan pengecekan dan memberikan estimasi biaya</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mb-4">
+                    <div class="card border-2 shadow-sm ">
+                        <div class="card-body p-4">
+                            <h3 class="header-4 color-navy fw-semibold mb-3">Step 4</h3>
+                            <div class="justify-content-center d-flex mb-2">
+                                <img src="{{ Vite::asset('resources\images\Union.png') }}" class="img-fluid mb-2" alt="konsultasi">
+                            </div>
+                            <hr class="w-25 mx-auto my-2 mb-4">
+                            <h4 class="header-4 color-accent fw-semibold mb-3">Perbaikan Teknisi Ahli</h4>
+                            <p class="body-1-card color-navy">Menggunakan sparepart original dengan proses yang transparan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mb-4">
+                    <div class="card border-2 shadow-sm ">
+                        <div class="card-body p-4">
+                            <h3 class="header-4 color-navy fw-semibold mb-3">Step 5</h3>
+                            <div class="justify-content-center d-flex mb-2">
+                                <img src="{{ Vite::asset('resources\images\check-circle.png') }}" class="img-fluid mb-2" alt="konsultasi">
+                            </div>
+                            <hr class="w-25 mx-auto my-2 mb-4">
+                            <h4 class="header-4 color-accent fw-semibold mb-3">Laptop Siap Diambil</h4>
+                            <p class="body-1-card color-navy">Laptop kembali dengan garansi, kondisi bersih & berfungsi normal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proses">
+        <div class="container">
+            <div class="row gx-4 gy-4 justify-content-center">
+                <div class="col-lg-6 col-md-6">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h4 class="card-title header-4 color-accent fw-semibold mb-4 text-center">Lihat Proses Pengerjaan Teknisi Kami</h4>
+                            <div class="embed-responsive embed-responsive-16by9 justify-content-center d-flex mb-2">
+                                <iframe class="embed-responsive-item mb-3" src="https://www.youtube.com/embed/OBBMF_9oD5g?si=G8AqVrmW8rOFdgIJ" allowfullscreen></iframe>
+                            </div>
+                            <p class="body-1-card color-navy text-center">Video menunjukkan proses service laptop secara profesional dan transparan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h4 class="card-title header-4 color-accent fw-semibold mb-4 text-center">Lihat Proses Pengerjaan Teknisi Kami</h4>
+                            <div class="embed-responsive embed-responsive-16by9 justify-content-center d-flex mb-2">
+                                <iframe class="embed-responsive-item mb-3" src="https://www.youtube.com/embed/3edtMfPl_kM?si=InXH8nmx5KUx2XbN" allowfullscreen></iframe>
+                            </div>
+                            <p class="body-1-card color-navy text-center">Video menunjukkan proses service laptop secara profesional dan transparan</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="promo">
-        <div class="container text-center">
-            <h2 class="header-2 fw-semibold mb-5">Promo & Penawaran Spesial</h2>
-            <div class="row justify-content-center gx-4 gy-4">
-                <div class="col-lg-5">
+        <div class="container">
+            <h2 class="header-2 color-navy fw-bold mb-2 text-center">Promo Spesial Bulan Ini</h2>
+            <p class="body-1 color-navy fw-normal mb-5 text-center">Penawaran Terbatas Untuk Anda!</p>
+            <div class="row gx-4 gy-4 justify-content-center">
+                <div class="col-lg-5 col-md-6">
                     <div class="card">
+                        <img class="card-img-top" src="{{ Vite::asset('resources\images\diskon1.png') }}" alt="Card image cap">
                         <div class="card-body">
-                            <h3 class="header-3 fw-medium">Diskon Maintenance</h3>
-                            <p class="body-1">Dapatkan diskon 20% untuk layanan cleaning internal laptop Anda. Jaga laptop tetap dingin!</p>
+                            <h4 class="header-2 color-navy fw-bold text-center mb-3">Hemat hingga 20% untuk Maintenance Rutin</h4>
+                            <p class="body-1-card color-navy text-center mb-3">Rawat laptop Anda secara berkala dan dapatkan diskon menarik untuk setiap kunjungan ke-2 dan seterusnya.</p>
+                            <ul class="body-1-card color-navy">
+                                <li>Pembersihan menyeluruh sistem</li>
+                                <li>Update software terbaru</li>
+                                <li>Optimasi performa</li>
+                                <li>Garansi layanan 30 hari</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5">
                     <div class="card">
+                        <img class="card-img-top" src="{{ Vite::asset('resources\images\diskon2.png') }}" alt="Card image cap">
                         <div class="card-body">
-                            <h3 class="header-3 fw-medium">Paket Korporat</h3>
-                            <p class="body-1">Voucher khusus untuk perusahaan dengan kontrak maintenance. Jaga aset IT perusahaan Anda.</p>
+                            <h4 class="header-2 color-navy fw-bold mb-3 text-center">Voucher Khusus untuk Perusahaan</h4>
+                            <p class="body-1-card color-navy mb-3 text-center">Kami menyediakan voucher service dan layanan on-site untuk kebutuhan kantor dan perusahaan Anda.</p>
+                            <ul class="body-1-card color-navy">
+                                <li>Layanan on-site gratis</li>
+                                <li>Harga khusus untuk bulk service</li>
+                                <li>Support teknis 24/7</li>
+                                <li>Maintenance kontrak tahunan</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
                 </div>
