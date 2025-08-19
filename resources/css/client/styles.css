@@ -108,28 +108,14 @@ html, body {
 
 /* Footer */
 footer {
-    background-color: var(--primary);
-    padding: 60px 0 0 0;
-}
-
-.footer-title {
-    font-family: var(--font-1);
-    color: var(--white);
-    font-size: 28px;
-    margin-bottom: 24px;
-}
-
-footer h3 {
-    color: var(--accent);
-}
-
-footer, footer a, footer address {
-    color: var(--neutral);
+    background-color: var(--navy);
 }
 
 .footer-copyright {
-    background-color: var(--primary);
-    filter: brightness(85%);
+    background-color: var(--navy);
+    filter: brightness(70%);
     padding: 16px;
-    margin-top: 40px;
+    font-size: 14px;
+    font-family: var(--font-2);
+    color: var(--neutral);
 }
