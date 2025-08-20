@@ -248,9 +248,9 @@
     color: var(--accent);
     font-family: var(--font-2);
     transition: var(--transition);
-    font-size: 36px;
-    padding: 16px 32px;
+    font-size: 24px;
+    padding: 12px 24px;
     border-radius: var(--border-radius);
-    font-weight: 700;
+    font-weight: 600;
 }
 /* End CTA Penutup */

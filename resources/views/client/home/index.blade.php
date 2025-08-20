@@ -3,15 +3,15 @@
         <div class="container">
             <div class="row align-items-center justify-content-center text-center text-lg-start">
                 <section class="col-lg-7">
-                    <h1 class="header-1 color-navy fw-bold mb-4">Service Laptop Cepat,<br>Jujur, dan Bergaransi</h1>
+                    <h1 class="header-1 color-navy fw-bold mb-0">Service Laptop</h1>
+                    <h1 class="header-1 color-accent fw-bold mb-4">Cepat, Jujur, dan Bergaransi</h1>
                     <img src="{{ asset('images\HeroImage.png') }}" class="img-fluid d-none hero-img" alt="Teknisi sedang bekerja">
-                    <p class="body-1 color-accent mb-4 lead">Kami siap menyelamatkan perangkat Anda, dari laptop biasa hingga gaming.</p>
-                    <a href="#kontak" class="btn btn-primary me-2 mb-2">Konsultasi Gratis</a>
+                    <p class="body-1 color-navy fw-normal mb-4 ">Kami siap membantu mengatasi berbagai masalah pada perangkat Anda, mulai dari laptop standar hingga laptop gaming, dengan layanan profesional dan terpercaya. Percayakan kepada ahlinya!</p>
                     <a href="https://api.whatsapp.com/send/?phone=6287823330830&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-secondary mb-2">
-                        <i class="fab fa-whatsapp me-2"></i>Chat via WhatsApp
+                        <i class="fab fa-whatsapp me-2"></i>Consult with Us
                     </a>
                 </section>
-                <section class="col-lg-5 d-none d-lg-block">
+                <section class="col-lg-5 d-lg-block">
                     <img src="{{ asset('images\HeroImage.png') }}" class="img-fluid mb-32 mx-auto d-block hero-img" alt="Teknisi sedang bekerja">
                 </section>
             </div>
@@ -218,7 +218,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-md-6">
                     <div class="card shadow">
                         <img class="card-img-top" src="{{ asset('images\diskon2.png') }}" alt="Card image cap">
                         <div class="card-body">
@@ -312,12 +312,21 @@
         </div>
     </section>
 
+    <section id="cta-penutup">
+        <div class="container text-center">
+            <h1 class="header-2 mb-3">Jangan tunggu kerusakan makin parah, segera hubungi kami sekarang!</h1>
+            <a href="#kontak" class="btn btn-primary btn-lg ">Pesan Layanan
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
     <section id="kontak">
         <div class="container">
             <h2 class="header-2 color-navy fw-bold mb-1 text-center">Hubungi Kami</h2>
             <p class="body-1 color-navy fw-normal mb-5 text-center">Hubungi kami untuk pemesanan layanan service atau kunjungi workshop kami untuk perbaikan langsung</p>
-            <div class="row gy-5 align-items-center">
-                <div class="col-lg-6 ">
+            <div class="row gy-5 justify-content-center">
+                <div class="col-lg-5 ">
                     <div class="card h-100">
                         <div class="card-body">
                             <h3 class="header-4 color-navy fw-semibold mb-5">Formulir Pemesanan Service</h3>
@@ -352,7 +361,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                     <h3 class="header-4 color-navy fw-semibold mb-4">Informasi Kontak</h3>
                     <div class="d-flex mb-3">
                         <i class="fab fa-whatsapp fa-2x color-accent me-3"></i>
@@ -383,14 +392,14 @@
         </div>
     </section>
 
-    <section id="cta-penutup">
+    <!-- <section id="cta-penutup">
         <div class="container text-center">
-            <h1 class="header-1 mb-3">Jangan tunggu kerusakan makin parah, segera hubungi kami sekarang!</h1>
+            <h1 class="header-2 mb-3">Jangan tunggu kerusakan makin parah, segera hubungi kami sekarang!</h1>
             <a href="#kontak" class="btn btn-primary btn-lg ">Pesan Layanan
                 <i class="fas fa-arrow-right"></i>
             </a>
         </div>
-    </section>
+    </section> -->
 
 
     @push('css')
