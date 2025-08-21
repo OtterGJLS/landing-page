@@ -36,31 +36,33 @@
 #keunggulan {
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color: var(--navy);
+    background-color: var(--neutral);
 }
 
 .keunggulan-item {
-    text-align: center;
-}
-
-.keunggulan-item img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
+    text-align: left;
 }
 
 .keunggulan-ic-container {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto 16px;
-    border-radius: 50%;
-    background-color: var(--neutral);
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--accent);
-    font-size: 32px;
 }
+
+.keunggulan-item-box {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.keunggulan-item-box img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
 /* End Keunggulan Section */
 
 
@@ -72,25 +74,71 @@
 }
 
 #layanan .card {
-    border: none;
+    box-shadow: none; 
     border-radius: var(--border-radius);
     transition: var(--transition);
 }
 
-#layanan .card .card-body img {
-    height: 100px;
-    width: 100px;
-    object-fit: contain;
-}
-
 #layanan .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-#layanan .card-title i {
-    color: var(--accent);
-    margin-right: 12px;
+#layanan .card-img-top {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+/* Glide.js Carousel for Layanan */
+.glide-layanan {
+    position: relative;
+}
+
+/* Styling Arrows */
+.glide-layanan .glide__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #474444;
+    color: var(--navy);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.glide-layanan .glide__arrow:hover {
+    background-color: var(--neutral);
+}
+
+.glide-layanan .glide__arrow--left {
+    left: -50px;
+}
+
+.glide-layanan .glide__arrow--right {
+    right: -50px;
+}
+
+/* Styling Bullets */
+.glide-layanan .glide__bullets {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.glide-layanan .glide__bullet {
+    background-color: #D1D5DB;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.glide-layanan .glide__bullet.glide__bullet--active {
+    background-color: var(--navy);
 }
 /* End Layanan Section */
 
@@ -191,8 +239,7 @@
 }
 
 #testimoni .card img {
-    width: 100%;
-    height: auto;
+    position: relative;
 }
 
 .glide-testimoni .card {
@@ -234,7 +281,6 @@
 }
 
 /* End Kontak Section */
-
 
 /* CTA Penutup */
 #cta-penutup {

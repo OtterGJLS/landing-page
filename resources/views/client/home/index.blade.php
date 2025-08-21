@@ -20,27 +20,54 @@
 
     <section id="keunggulan">
         <div class="container">
-            <h2 class="header-2 color-neutral fw-bold mb-5 text-center">Kenapa Memilih Kami?</h2>
-            <div class="row text-center gy-4">
-                <div class="col-md-3 col-6 keunggulan-item">
-                    <img src="{{ asset('images\garansi.png') }}" class="img-fluid mb-4" alt="garansi">
-                    <h3 class="body-1 color-neutral lead mb-2">Garansi Service</h3>
-                    <p class="body-2 color-neutral lead" >Garansi hingga 30 hari setelah service.</p>
+            <h2 class="header-2 color-navy fw-bold mb-5 text-center">Kenapa Memilih Kami?</h2>
+            <div class="row gy-4">
+                <div class="col-md-3 col-6">
+                    <div class="keunggulan-item-box">
+                        <div class="keunggulan-ic-container flex-shrink-0 me-2 ">
+                            <img src="{{ asset('images/garansi.png') }}" class="img-fluid" alt="garansi">
+                        </div> 
+                        <div>
+                            <h3 class="body-1 color-navy fw-bold mb-3">Garansi Service</h3>
+                            <p class="body-1 color-navy mb-0">Garansi hingga 30 hari setelah service.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 col-6 keunggulan-item">
-                    <img src="{{ asset('images\teknisi.png') }}" class="img-fluid mb-4" alt="teknisi">
-                    <h3 class="body-1 color-neutral lead mb-2">Teknisi Berpengalaman</h3>
-                    <p class="body-2 color-neutral lead" >Dikerjakan oleh teknisi profesional.</p>
+
+                <div class="col-md-3 col-6">
+                    <div class="keunggulan-item-box">
+                        <div class="keunggulan-ic-container flex-shrink-0 me-2 ">
+                            <img src="{{ asset('images/teknisi.png') }}" class="img-fluid" alt="teknisi">
+                        </div>
+                        <div>
+                            <h3 class="body-1 color-navy fw-bold mb-3">Teknisi Berpengalaman</h3>
+                            <p class="body-1 color-navy mb-0">Dikerjakan oleh teknisi profesional.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 col-6 keunggulan-item">
-                    <img src="{{ asset('images\gear.png') }}" class="img-fluid mb-4" alt="sparepart">
-                    <h3 class="body-1 color-neutral lead mb-2">Sparepart Original</h3>
-                    <p class="body-2 color-neutral lead" >Hanya menggunakan komponen original.</p>
+
+                <div class="col-md-3 col-6">
+                    <div class="keunggulan-item-box">
+                        <div class="keunggulan-ic-container flex-shrink-0 me-2">
+                            <img src="{{ asset('images/gear.png') }}" class="img-fluid" alt="sparepart">
+                        </div>
+                        <div>
+                            <h3 class="body-1 color-navy fw-bold mb-3">Sparepart Original</h3>
+                            <p class="body-1 color-navy mb-0">Hanya menggunakan komponen original.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 col-6 keunggulan-item">
-                    <img src="{{ asset('images\konsul.png') }}" class="img-fluid mb-4" alt="konsultasi">
-                    <h3 class="body-1 color-neutral lead mb-2">Gratis Cek & Konsultasi</h3>
-                    <p class="body-2 color-neutral lead" >Konsultasi bebas biaya, langsung WA.</p>
+
+                <div class="col-md-3 col-6">
+                    <div class="keunggulan-item-box">
+                        <div class="keunggulan-ic-container flex-shrink-0 me-2">
+                            <img src="{{ asset('images/konsul.png') }}" class="img-fluid" alt="konsultasi">
+                        </div>
+                        <div>
+                            <h3 class="body-1 color-navy fw-bold mb-3">Gratis Cek & Konsultasi</h3>
+                            <p class="body-1 color-navy mb-0">Konsultasi bebas biaya, langsung WA.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,46 +77,68 @@
         <div class="container">
             <h2 class="header-2 color-navy fw-bold mb-2 text-center">Semua Kebutuhan Service dalam Satu Tempat</h2>
             <p class="body-1 color-navy fw-normal mb-5 text-center">Solusi lengkap untuk semua masalah perangkat elektronik Anda</p>
-            <div class="row gx-4 gy-4 justify-content-center">
-                <div class="col-lg-5 col-md-6">
-                    <div class="card h-100 shadow">
-                        <div class="card-body">
-                            <img src="{{ asset('images\hardware.png') }}" class="img-fluid mx-auto d-block mb-5" alt="sparepart">
-                            <h3 class="card-title header-4 color-accent fw-semibold mb-3 text-center">Service Hardware</h3>
-                            <p class="body-1-card color-navy text-center">Ganti LCD, keyboard, upgrade RAM/SSD, dll.</p>
-                        </div>
-                    </div>
+
+            <div class="glide-layanan">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="card h-100 shadow-sm">
+                                <img src="{{ asset('images/Group 51.png') }}" class="card-img-top" alt="Service Hardware">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title header-4 color-navy fw-semibold mb-2">Service Hardware</h3>
+                                    <p class="body-2 color-navy">Ganti LCD, keyboard, upgrade RAM/SSD, dll.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="card h-100 shadow-sm">
+                                <img src="{{ asset('images/Group 51 (1).png') }}" class="card-img-top" alt="Service Software">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title header-4 color-navy fw-semibold mb-2">Service Software</h3>
+                                    <p class="body-2 color-navy">Install ulang, recovery data, pasang antivirus.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="card h-100 shadow-sm">
+                                <img src="{{ asset('images/Group 51 (2).png') }}" class="card-img-top" alt="Maintenance & Cleaning">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title header-4 color-navy fw-semibold mb-2">Maintenance & Cleaning</h3>
+                                    <p class="body-2 color-navy">Bersihkan laptop dari debu, thermal paste, dll.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="card h-100 shadow-sm">
+                                <img src="{{ asset('images/Group 51 (3).png') }}" class="card-img-top" alt="Service Printer & PC">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title header-4 color-navy fw-semibold mb-2">Service Printer & PC</h3>
+                                    <p class="body-2 color-navy">Untuk printer rumah/kantor, juga PC rakitan.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-lg-5 col-md-6">
-                    <div class="card h-100 shadow">
-                        <div class="card-body">
-                            <img src="{{ asset('images\software.png') }}" class="img-fluid mx-auto d-block mb-5" alt="software">
-                            <h3 class="card-title header-4 color-accent fw-semibold mb-3 text-center">Service Software</h3>
-                            <p class="body-1-card color-navy text-center">Install ulang, recovery data, pasang antivirus.</p>
-                        </div>
-                    </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
                 </div>
-                <div class="col-lg-5 col-md-6">
-                    <div class="card h-100 shadow">
-                        <div class="card-body">
-                            <img src="{{ asset('images\clean.png') }}" class="img-fluid mx-auto d-block mb-5" alt="maintenance">
-                            <h3 class="card-title header-4 color-accent fw-semibold mb-3 text-center">Maintenance & Cleaning</h3>
-                            <p class="body-1-card color-navy text-center">Bersihkan laptop dari debu, thermal paste, dll.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6">
-                    <div class="card h-100 shadow">
-                        <div class="card-body">
-                            <img src="{{ asset('images\printer.png') }}" class="img-fluid mx-auto d-block mb-5" alt="perangkat lain">
-                            <h3 class="card-title header-4 color-accent fw-semibold mb-3 text-center">Service Printer & PC</h3>
-                            <p class="body-1-card color-navy text-center">Untuk printer rumah/kantor, juga PC rakitan.</p>
-                        </div>
-                    </div>
+
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                    <button class="glide__bullet" data-glide-dir="=3"></button>
                 </div>
             </div>
         </div>
     </section>
+    
 <!-- style="background-image: url('{{ asset('images/BG.svg') }}'); background-size: cover; background-position: center;" -->
     <section id="alur">
         <div class="container">
@@ -391,17 +440,7 @@
             </div>
         </div>
     </section>
-
-    <!-- <section id="cta-penutup">
-        <div class="container text-center">
-            <h1 class="header-2 mb-3">Jangan tunggu kerusakan makin parah, segera hubungi kami sekarang!</h1>
-            <a href="#kontak" class="btn btn-primary btn-lg ">Pesan Layanan
-                <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </section> -->
-
-
+    
     @push('css')
         @vite(['resources/css/client/pages/home/styles.css'])
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
@@ -412,6 +451,19 @@
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 new Glide('.glide-testimoni', {
+                    type: 'carousel',
+                    startAt: 0,
+                    perView: 3,
+                    gap: 24,
+                    autoplay: 4000,
+                    hoverpause: true,
+                    breakpoints: {
+                        992: { perView: 2 },
+                        768: { perView: 1 }
+                    }
+                }).mount();
+
+                new Glide('.glide-layanan', {
                     type: 'carousel',
                     startAt: 0,
                     perView: 3,
