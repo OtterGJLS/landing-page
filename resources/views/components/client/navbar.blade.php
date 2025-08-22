@@ -10,6 +10,7 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                 <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
                 <li class="nav-item ms-lg-3"><a class="nav-link" href="#alur">Proses</a></li>
+                <li class="nav-item ms-lg-3"><a class="nav-link" href="#testimoni">Testimoni</a></li>
                 <li class="nav-item ms-lg-3"><a class="nav-link" href="#tentang-kami">Tentang Kami</a></li>
                 <li class="nav-item ms-lg-3"><a class="nav-link" href="#kontak">Kontak</a></li>
             </ul>

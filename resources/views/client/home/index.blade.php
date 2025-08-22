@@ -83,37 +83,37 @@
                     <ul class="glide__slides">
                         <li class="glide__slide">
                             <div class="card h-100 shadow-sm">
-                                <img src="{{ asset('images/Group 51.png') }}" class="card-img-top" alt="Service Hardware">
+                                <img src="{{ asset('images/hardware.png') }}" class="card-img-top" alt="Service Hardware">
                                 <div class="card-body text-center">
                                     <h3 class="card-title header-4 color-navy fw-semibold mb-2">Service Hardware</h3>
-                                    <p class="body-2 color-navy">Ganti LCD, keyboard, upgrade RAM/SSD, dll.</p>
+                                    <p class="body-1-card color-navy">Ganti LCD, keyboard, upgrade RAM/SSD, dll.</p>
                                 </div>
                             </div>
                         </li>
                         <li class="glide__slide">
                             <div class="card h-100 shadow-sm">
-                                <img src="{{ asset('images/Group 51 (1).png') }}" class="card-img-top" alt="Service Software">
+                                <img src="{{ asset('images/software.png') }}" class="card-img-top" alt="Service Software">
                                 <div class="card-body text-center">
                                     <h3 class="card-title header-4 color-navy fw-semibold mb-2">Service Software</h3>
-                                    <p class="body-2 color-navy">Install ulang, recovery data, pasang antivirus.</p>
+                                    <p class="body-1-card color-navy">Install ulang, recovery data, pasang antivirus.</p>
                                 </div>
                             </div>
                         </li>
                         <li class="glide__slide">
                             <div class="card h-100 shadow-sm">
-                                <img src="{{ asset('images/Group 51 (2).png') }}" class="card-img-top" alt="Maintenance & Cleaning">
+                                <img src="{{ asset('images/clean.png') }}" class="card-img-top" alt="Maintenance & Cleaning">
                                 <div class="card-body text-center">
                                     <h3 class="card-title header-4 color-navy fw-semibold mb-2">Maintenance & Cleaning</h3>
-                                    <p class="body-2 color-navy">Bersihkan laptop dari debu, thermal paste, dll.</p>
+                                    <p class="body-1-card color-navy">Bersihkan laptop dari debu, thermal paste, dll.</p>
                                 </div>
                             </div>
                         </li>
                         <li class="glide__slide">
                             <div class="card h-100 shadow-sm">
-                                <img src="{{ asset('images/Group 51 (3).png') }}" class="card-img-top" alt="Service Printer & PC">
+                                <img src="{{ asset('images/printer.png') }}" class="card-img-top" alt="Service Printer & PC">
                                 <div class="card-body text-center">
                                     <h3 class="card-title header-4 color-navy fw-semibold mb-2">Service Printer & PC</h3>
-                                    <p class="body-2 color-navy">Untuk printer rumah/kantor, juga PC rakitan.</p>
+                                    <p class="body-1-card color-navy">Untuk printer rumah/kantor, juga PC rakitan.</p>
                                 </div>
                             </div>
                         </li>
@@ -139,8 +139,7 @@
         </div>
     </section>
     
-<!-- style="background-image: url('{{ asset('images/BG.svg') }}'); background-size: cover; background-position: center;" -->
-    <section id="alur">
+    <section id="alur" style="background-image: url('{{ asset('images/BGalur.png') }}'); background-size: cover; background-position: center;">
         <div class="container">
             <h2 class="header-2 color-neutral fw-bold mb-2 text-center">Alur Service Step by Step</h2>
             <p class="body-1 color-neutral fw-normal text-center mb-5" >Proses service laptop yang mudah dan terpercaya dari awal sampai akhir</p>
@@ -289,7 +288,7 @@
         </div>
     </section>
 
-    <section id="testimoni">
+    <section id="testimoni" style="background-image: url('{{ asset('images/BGtesti.png') }}'); background-size: cover; background-position: center;">
         <div class="container">
             <h2 class="header-2 color-neutral fw-bold mb-5 text-center">Apa Kata Pelanggan Kami?</h2>
             <div class="glide-testimoni">
@@ -297,7 +296,7 @@
                     <ul class="glide__slides">
                         <li class="glide__slide">
                             <div class="card shadow-sm h-100">
-                                <img class="card-img-top" src="{{ asset('images/testimoni1.png') }}" class="img-fluid mb-3" alt="Testimoni">
+                                <img class="card-img-top" src="{{ asset('images/sari.png') }}" class="img-fluid mb-3" alt="Testimoni">
                                 <!-- <div class="card-body">
                                     <p class="body-1 color-grey">"Pelayanannya cepat banget, laptop saya yang mati total bisa hidup lagi. Teknisi jujur dan harganya masuk akal. Recommended!"</p>
                                 </div> -->
@@ -311,7 +310,7 @@
                         </li>
                         <li class="glide__slide">
                             <div class="card shadow-sm h-100">
-                                <img class="card-img-top" src="{{ asset('images/testimoni2.png') }}" class="img-fluid mb-3" alt="Testimoni">
+                                <img class="card-img-top" src="{{ asset('images/rizky.png') }}" class="img-fluid mb-3" alt="Testimoni">
                                 <!-- <div class="card-body"><p class="body-1 color-grey">"Upgrade SSD di sini prosesnya sat set. Dikasih penjelasan detail soal produknya. Laptop jadi ngebut sekarang. Mantap!"</p></div> -->
                                 <div class="card-footer">
                                     <div class="text-warning mb-2">
@@ -323,7 +322,7 @@
                         </li>
                         <li class="glide__slide">
                             <div class="card shadow-sm h-100">
-                                <img class="card-img-top" src="{{ asset('images/testimoni3.png') }}" class="img-fluid mb-3" alt="Testimoni">
+                                <img class="card-img-top" src="{{ asset('images/athar.png') }}" class="img-fluid mb-3" alt="Testimoni">
                                 <!-- <div class="card-body"><p class="body-1 color-grey">"Laptop kena air dan panik banget. Untungnya nemu tempat ini. Data-data penting berhasil diselamatkan semua. Terima kasih banyak!"</p></div> -->
                                 <div class="card-footer">
                                     <div class="text-warning mb-2">
@@ -334,6 +333,20 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
                 </div>
             </div>
         </div>
@@ -361,11 +374,11 @@
         </div>
     </section>
 
-    <section id="cta-penutup">
+    <section id="cta-penutup" style="background-image: url('{{ asset('images/BGalur.png') }}'); background-size: cover; background-position: center;">
         <div class="container text-center">
-            <h1 class="header-2 mb-3">Jangan tunggu kerusakan makin parah, segera hubungi kami sekarang!</h1>
+            <h1 class="header-2 mb-4">Jangan tunggu kerusakan makin parah, segera hubungi kami sekarang!</h1>
             <a href="#kontak" class="btn btn-primary btn-lg ">Pesan Layanan
-                <i class="fas fa-arrow-right"></i>
+                <i class="fas fa-arrow-down"></i>
             </a>
         </div>
     </section>
@@ -454,7 +467,7 @@
                     type: 'carousel',
                     startAt: 0,
                     perView: 3,
-                    gap: 24,
+                    gap: 12,
                     autoplay: 4000,
                     hoverpause: true,
                     breakpoints: {
@@ -467,7 +480,7 @@
                     type: 'carousel',
                     startAt: 0,
                     perView: 3,
-                    gap: 24,
+                    gap: 12,
                     autoplay: 4000,
                     hoverpause: true,
                     breakpoints: {
