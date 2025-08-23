@@ -5,13 +5,13 @@
                 <section class="col-lg-7">
                     <h1 class="header-1 color-navy fw-bold mb-0">Service Laptop</h1>
                     <h1 class="header-1 color-accent fw-bold mb-4">Cepat, Jujur, dan Bergaransi</h1>
-                    <img src="{{ asset('images\HeroImage.png') }}" class="img-fluid d-none hero-img" alt="Teknisi sedang bekerja">
+                    <img src="{{ asset('images\HeroImage.png') }}" class="img-fluid d-lg-none hero-img" alt="Teknisi sedang bekerja">
                     <p class="body-1 color-navy fw-normal mb-4 ">Kami siap membantu mengatasi berbagai masalah pada perangkat Anda, mulai dari laptop standar hingga laptop gaming, dengan layanan profesional dan terpercaya. Percayakan kepada ahlinya!</p>
                     <a href="https://api.whatsapp.com/send/?phone=6287823330830&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-secondary mb-2">
                         <i class="fab fa-whatsapp me-2"></i>Consult with Us
                     </a>
                 </section>
-                <section class="col-lg-5 d-lg-block">
+                <section class="col-lg-5 d-none d-lg-block">
                     <img src="{{ asset('images\HeroImage.png') }}" class="img-fluid mb-32 mx-auto d-block hero-img" alt="Teknisi sedang bekerja">
                 </section>
             </div>
@@ -28,7 +28,7 @@
                             <img src="{{ asset('images/garansi.png') }}" class="img-fluid" alt="garansi">
                         </div> 
                         <div>
-                            <h3 class="body-1 color-navy fw-bold mb-3">Garansi Service</h3>
+                            <h3 class="body-1 color-navy fw-bold mb-2">Garansi Service</h3>
                             <p class="body-1 color-navy mb-0">Garansi hingga 30 hari setelah service.</p>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                             <img src="{{ asset('images/teknisi.png') }}" class="img-fluid" alt="teknisi">
                         </div>
                         <div>
-                            <h3 class="body-1 color-navy fw-bold mb-3">Teknisi Berpengalaman</h3>
+                            <h3 class="body-1 color-navy fw-bold mb-2">Teknisi Berpengalaman</h3>
                             <p class="body-1 color-navy mb-0">Dikerjakan oleh teknisi profesional.</p>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                             <img src="{{ asset('images/gear.png') }}" class="img-fluid" alt="sparepart">
                         </div>
                         <div>
-                            <h3 class="body-1 color-navy fw-bold mb-3">Sparepart Original</h3>
+                            <h3 class="body-1 color-navy fw-bold mb-2">Sparepart Original</h3>
                             <p class="body-1 color-navy mb-0">Hanya menggunakan komponen original.</p>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                             <img src="{{ asset('images/konsul.png') }}" class="img-fluid" alt="konsultasi">
                         </div>
                         <div>
-                            <h3 class="body-1 color-navy fw-bold mb-3">Gratis Cek & Konsultasi</h3>
+                            <h3 class="body-1 color-navy fw-bold mb-2">Gratis Cek & Konsultasi</h3>
                             <p class="body-1 color-navy mb-0">Konsultasi bebas biaya, langsung WA.</p>
                         </div>
                     </div>
@@ -138,74 +138,52 @@
             </div>
         </div>
     </section>
-    
-    <section id="alur" style="background-image: url('{{ asset('images/BGalur.png') }}'); background-size: cover; background-position: center;">
+ 
+    <section id="alur" style="background-image: url('{{ asset('images/BGalur.png') }}');">
         <div class="container">
-            <h2 class="header-2 color-neutral fw-bold mb-2 text-center">Alur Service Step by Step</h2>
-            <p class="body-1 color-neutral fw-normal text-center mb-5" >Proses service laptop yang mudah dan terpercaya dari awal sampai akhir</p>
-            <div class="row justify-content-center text-center">
-                <div class="col-md-4 col-lg-4 mb-4">
-                    <div class="card border-2 shadow-sm">
-                        <div class="card-body p-4">
-                            <h3 class="header-4 color-navy fw-semibold mb-3">Step 1</h3>
-                            <div class="justify-content-center d-flex mb-2">
-                                <img src="{{ asset('images\chat-dots.png') }}" class="img-fluid mb-2" alt="konsultasi">
-                            </div>
-                            <hr class="w-25 mx-auto my-2 mb-4">
-                            <h4 class="header-4 color-accent fw-semibold mb-3">Konsultasi Gratis</h4>
-                            <p class="body-1-card color-navy">Hubungi via WhatsApp atau isi form di website untuk konsultasi awal</p>
-                        </div>
-                    </div>
+            <div class="row gx-4 gy-4"> 
+                <div class="col-lg-4">
+                    <h2 class="header-2 color-neutral fw-bold mb-3">3 Langkah Mudah Layanan Kami</h2>
+                    <p class="body-1 color-neutral fw-normal">Ikuti alur sederhana kami untuk mendapatkan layanan perbaikan yang cepat dan efisien.</p>
                 </div>
-                <div class="col-md-4 col-lg-4 mb-4">
-                    <div class="card border-2 shadow-sm ">
-                        <div class="card-body p-4">
-                            <h3 class="header-4 color-navy fw-semibold mb-3">Step 2</h3>
-                            <div class="justify-content-center d-flex mb-2">
-                                <img src="{{ asset('images\box2.png') }}" class="img-fluid mb-2" alt="konsultasi">
+
+                <div class="col-lg-8">
+                    <div class="row aligm-items-start gx-4 gy-4">
+
+                        <div class="col-md-4 mb-3 ">
+                            <div class="card border-0 text-center h-100">
+                                <div class="card-body p-4">
+                                    <div class="justify-content-center d-flex mb-2">
+                                        <img src="{{ asset('images\konsultasi.png') }}" class="img-fluid mb-2" alt="konsultasi">
+                                    </div>
+                                    <h4 class="header-4 color-accent fw-semibold mb-3">Konsultasi Kerusakan</h4>
+                                    <p class="body-1-card color-navy">Hubungi kami dan sampaikan masalah yang terjadi pada perangkat Anda</p>
+                                </div>
                             </div>
-                            <hr class="w-25 mx-auto my-2 mb-4">
-                            <h4 class="header-4 color-accent fw-semibold mb-3">Kirim / Titip Laptop</h4>
-                            <p class="body-1-card color-navy">Antar langsung ke workshop atau gunakan layanan jemput (jika tersedia)</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 mb-4">
-                    <div class="card border-2 shadow-sm">
-                        <div class="card-body p-4">
-                            <h3 class="header-4 color-navy fw-semibold mb-3">Step 3</h3>
-                            <div class="justify-content-center d-flex mb-2">
-                                <img src="{{ asset('images\search.png') }}" class="img-fluid mb-2" alt="konsultasi">
+
+                        <div class="col-md-4 mb-3">
+                            <div class="card border-0 text-center h-100">
+                                <div class="card-body p-4">
+                                    <div class="justify-content-center d-flex mb-2">
+                                        <img src="{{ asset('images\pengerjaan.png') }}" class="img-fluid mb-2" alt="pengerjaan teknisi">
+                                    </div>
+                                    <h4 class="header-4 color-accent fw-semibold mb-3">Pengerjaan Teknisi</h4>
+                                    <p class="body-1-card color-navy">Teknisi ahli kami akan segera menganalisa dan memperbaiki masalahnya.</p>
+                                </div>
                             </div>
-                            <hr class="w-25 mx-auto my-2 mb-4">
-                            <h4 class="header-4 color-accent fw-semibold mb-3">Diagnosa Kerusakan</h4>
-                            <p class="body-1-card color-navy">Teknisi melakukan pengecekan dan memberikan estimasi biaya</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 mb-4">
-                    <div class="card border-2 shadow-sm ">
-                        <div class="card-body p-4">
-                            <h3 class="header-4 color-navy fw-semibold mb-3">Step 4</h3>
-                            <div class="justify-content-center d-flex mb-2">
-                                <img src="{{ asset('images\Union.png') }}" class="img-fluid mb-2" alt="konsultasi">
+
+                        <div class="col-md-4 mb-3">
+                            <div class="card border-0 text-center h-100">
+                                <div class="card-body p-4">
+                                    <div class="justify-content-center d-flex mb-2">
+                                        <img src="{{ asset('images\selesai.png') }}" class="img-fluid mb-2" alt="unit siap diambil">
+                                    </div>
+                                    <h4 class="header-4 color-accent fw-semibold mb-3">Unit Siap Diambil</h4>
+                                    <p class="body-1-card color-navy">Kami akan menghubungi Anda jika perangkat sudah selesai diperbaiki.</p>
+                                </div>
                             </div>
-                            <hr class="w-25 mx-auto my-2 mb-4">
-                            <h4 class="header-4 color-accent fw-semibold mb-3">Perbaikan Teknisi Ahli</h4>
-                            <p class="body-1-card color-navy">Menggunakan sparepart original dengan proses yang transparan</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 mb-4">
-                    <div class="card border-2 shadow-sm ">
-                        <div class="card-body p-4">
-                            <h3 class="header-4 color-navy fw-semibold mb-3">Step 5</h3>
-                            <div class="justify-content-center d-flex mb-2">
-                                <img src="{{ asset('images\check-circle.png') }}" class="img-fluid mb-2" alt="konsultasi">
-                            </div>
-                            <hr class="w-25 mx-auto my-2 mb-4">
-                            <h4 class="header-4 color-accent fw-semibold mb-3">Laptop Siap Diambil</h4>
-                            <p class="body-1-card color-navy">Laptop kembali dengan garansi, kondisi bersih & berfungsi normal</p>
                         </div>
                     </div>
                 </div>
@@ -288,61 +266,52 @@
         </div>
     </section>
 
-    <section id="testimoni" style="background-image: url('{{ asset('images/BGtesti.png') }}'); background-size: cover; background-position: center;">
+    <section id="testimoni"style="background-image: url('{{ asset('images/BGtesti.png') }}'); ">
         <div class="container">
             <h2 class="header-2 color-neutral fw-bold mb-5 text-center">Apa Kata Pelanggan Kami?</h2>
+
             <div class="glide-testimoni">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
                         <li class="glide__slide">
-                            <div class="card shadow-sm h-100">
-                                <img class="card-img-top" src="{{ asset('images/sari.png') }}" class="img-fluid mb-3" alt="Testimoni">
-                                <!-- <div class="card-body">
-                                    <p class="body-1 color-grey">"Pelayanannya cepat banget, laptop saya yang mati total bisa hidup lagi. Teknisi jujur dan harganya masuk akal. Recommended!"</p>
-                                </div> -->
-                                <div class="card-footer">
+                            <div class="card h-100 shadow-sm">
+                                <img src="{{ asset('images/sari.png') }}" class="card-img-top" alt="Testimoni Sari">
+                                <div class="card-body text-center">
                                     <div class="text-warning mb-2">
                                         <i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star"></i>
                                     </div>
-                                    <h4 class="header-4 color-navy fw-semibold mb-1">Sari Indrawati</h4>
+                                    <h4 class="card-title header-4 color-navy fw-semibold mb-1">Sari Indrawati</h4>
                                 </div>
                             </div>
                         </li>
                         <li class="glide__slide">
-                            <div class="card shadow-sm h-100">
-                                <img class="card-img-top" src="{{ asset('images/rizky.png') }}" class="img-fluid mb-3" alt="Testimoni">
-                                <!-- <div class="card-body"><p class="body-1 color-grey">"Upgrade SSD di sini prosesnya sat set. Dikasih penjelasan detail soal produknya. Laptop jadi ngebut sekarang. Mantap!"</p></div> -->
-                                <div class="card-footer">
+                            <div class="card h-100 shadow-sm">
+                                <img src="{{ asset('images/rizky.png') }}" class="card-img-top" alt="Testimoni Rizky">
+                                <div class="card-body text-center">
                                     <div class="text-warning mb-2">
                                         <i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star"></i>
                                     </div>
-                                    <h4 class="header-4 color-navy fw-semibold mb-1">Rizky Pratama</h4>
+                                    <h4 class="card-title header-4 color-navy fw-semibold mb-1">Rizky Pratama</h4>
                                 </div>
                             </div>
                         </li>
                         <li class="glide__slide">
-                            <div class="card shadow-sm h-100">
-                                <img class="card-img-top" src="{{ asset('images/athar.png') }}" class="img-fluid mb-3" alt="Testimoni">
-                                <!-- <div class="card-body"><p class="body-1 color-grey">"Laptop kena air dan panik banget. Untungnya nemu tempat ini. Data-data penting berhasil diselamatkan semua. Terima kasih banyak!"</p></div> -->
-                                <div class="card-footer">
+                            <div class="card h-100 shadow-sm">
+                                <img src="{{ asset('images/athar.png') }}" class="card-img-top" alt="Testimoni Athar">
+                                <div class="card-body text-center">
                                     <div class="text-warning mb-2">
                                         <i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star me-1"></i><i class="fas fa-star"></i>
                                     </div>
-                                    <h4 class="header-4 color-navy fw-semibold mb-1">Athar Hilman</h4>
+                                    <h4 class="card-title header-4 color-navy fw-semibold mb-1">Athar Hilman</h4>
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-                        <i class="fas fa-arrow-left"></i>
-                    </button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-arrow-right"></i></button>
                 </div>
-
                 <div class="glide__bullets" data-glide-el="controls[nav]">
                     <button class="glide__bullet" data-glide-dir="=0"></button>
                     <button class="glide__bullet" data-glide-dir="=1"></button>
@@ -374,9 +343,9 @@
         </div>
     </section>
 
-    <section id="cta-penutup" style="background-image: url('{{ asset('images/BGalur.png') }}'); background-size: cover; background-position: center;">
+    <section id="cta-penutup" style="background-image: url('{{ asset('images/BGalur.png') }}'); ">
         <div class="container text-center">
-            <h1 class="header-2 mb-4">Jangan tunggu kerusakan makin parah, segera hubungi kami sekarang!</h1>
+            <h1 class="header-2 fw-bold mb-4">Jangan tunggu kerusakan makin parah, segera hubungi kami sekarang!</h1>
             <a href="#kontak" class="btn btn-primary btn-lg ">Pesan Layanan
                 <i class="fas fa-arrow-down"></i>
             </a>
@@ -395,24 +364,40 @@
                             <form action="#" method="POST">
                                 <div class="body-1 color-navy mb-3">
                                     <label for="name" class="form-label">Nama Lengkap</label>
-                                    <input type="text" class="form-control" id="name" required placeholder="Masukkan nama Anda">
+                                    <input type="text" class="form-control" id="name" required placeholder="Contoh: Rizky Maulana">
                                 </div>
                                 <div class="body-1 color-navy mb-3">
                                     <label for="phone" class="form-label">Nomor WhatsApp</label>
-                                    <input type="tel" class="form-control" id="phone" required placeholder="Masukkan nomor WhatsApp Anda">
+                                    <input type="tel" class="form-control" id="phone" required placeholder="Contoh: 081234567890">
                                 </div>
                                 <div class="body-1 color-navy mb-3">
-                                    <label for="inputTipe" class="form-label">Tipe Perangkat</label>
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required placeholder="Contoh: rizky@mail.com">
+                                </div>
+                                <div class="body-1 color-navy mb-3">
+                                    <label for="alamat" class="form-label">Alamat Lengkap</label>
+                                    <textarea class="form-control" id="alamat" rows="3" required placeholder="Contoh: Jl. Melati No. 10, RT 03 RW 02, Bandung"></textarea>
+                                </div>
+                                <div class="body-1 color-navy mb-3">
+                                    <label for="inputTipe" class="form-label">Merk Perangkat</label>
                                     <select id="inputTipe" class="form-select" required>
-                                        <option selected>Pilih Tipe Perangat</option>
+                                        <option selected>Pilih merk Perangat</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
                                 </div>
                                 <div class="body-1 color-navy mb-3">
-                                    <label for="message" class="form-label">Jenis Kerusakan / Keluhan</label>
-                                    <textarea class="form-control" id="message" rows="4" required placeholder="Silakan jelaskan masalah perangkat Anda"></textarea>
+                                    <label for="model" class="form-label">Model / Series</label>
+                                    <input type="text" class="form-control" id="model" required placeholder="Contoh: Vivobook A416MA">
+                                </div>
+                                <div class="body-1 color-navy mb-3">
+                                    <label for="seri" class="form-label">Nomor Seri Perangkat</label>
+                                    <input type="text" class="form-control" id="seri" required placeholder="Contoh: SN1234567890">
+                                </div>
+                                <div class="body-1 color-navy mb-3">
+                                    <label for="message" class="form-label">Keluhan / Kerusakan</label>
+                                    <textarea class="form-control" id="message" rows="3" required placeholder="Contoh: Laptop tiba-tiba mati total saat digunakan"></textarea>
                                 </div>
                                 <div class="d-grid">
                                     <button type="submit" class="btn btn-primary">
@@ -426,14 +411,14 @@
                 <div class="col-lg-5">
                     <h3 class="header-4 color-navy fw-semibold mb-4">Informasi Kontak</h3>
                     <div class="d-flex mb-3">
-                        <i class="fab fa-whatsapp fa-2x color-accent me-3"></i>
+                        <i class="fab fa-whatsapp fa-2x color-accent me-2"></i>
                         <div>
                             <h4 class="header-4 color-navy fw-semibold mb-1">WhatsApp</h4>
                             <a href="https://wa.me/6281234567890" target="_blank" class="body-1-card text-decoration-none color-navy">+62 812-3456-7890</a>
                         </div>
                     </div>
                     <div class="d-flex mb-3">
-                        <i class="far fa-envelope fa-2x color-accent me-3"></i>
+                        <i class="far fa-envelope fa-2x color-accent me-2"></i>
                         <div>
                             <h4 class="header-4 color-navy fw-semibold mb-1">Email</h4>
                             <p class="body-1-card color-navy mb-0">support@servicelaptop.com</p>
@@ -463,12 +448,12 @@
         <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                new Glide('.glide-testimoni', {
+                new Glide('.glide-layanan', {
                     type: 'carousel',
                     startAt: 0,
                     perView: 3,
-                    gap: 12,
-                    autoplay: 4000,
+                    gap: 5,
+                    autoplay: 3500,
                     hoverpause: true,
                     breakpoints: {
                         992: { perView: 2 },
@@ -476,12 +461,12 @@
                     }
                 }).mount();
 
-                new Glide('.glide-layanan', {
+                new Glide('.glide-testimoni', {
                     type: 'carousel',
                     startAt: 0,
                     perView: 3,
-                    gap: 12,
-                    autoplay: 4000,
+                    gap: 5,
+                    autoplay: 3500,
                     hoverpause: true,
                     breakpoints: {
                         992: { perView: 2 },

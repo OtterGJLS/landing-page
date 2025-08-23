@@ -89,11 +89,14 @@
 
 #layanan .card-img-top {
     border-radius: var(--border-radius) var(--border-radius) 0 0;
+    object-fit: cover;
 }
 
 /* Glide.js Carousel for Layanan */
 .glide-layanan {
     position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .glide__slides {
@@ -156,7 +159,6 @@
 #alur {
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color: var(--accent);
 }
 
 /* Alur Card */
@@ -166,10 +168,6 @@
 
 #alur .card-body {
     padding: 2rem;
-}
-
-#alur hr {
-    border-top: 3px solid var(--navy);
 }
 
 /* End Alur Section */
@@ -251,26 +249,23 @@
     border-radius: 15px;
     transition: var(--transition);
     width: 100%;
-    max-width: 340px;
+    max-width: 330px;
     justify-content: center;
     margin: 0 auto;
 }
 
+#testimoni .card-img-top {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    object-fit: cover;
+}
+
 .glide-testimoni {
     position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.glide-testimoni .card {
-    border-radius: 15px;
-    border: 1px solid var(--neutral);
-}
 
-.glide-testimoni .card-footer {
-    background-color: transparent;
-    border-top: none;
-    justify-content: center;
-    text-align: center;
-}
 .glide-testimoni .glide__arrow {
     position: absolute;
     top: 40%;
@@ -341,7 +336,7 @@
 
 #kontak iframe {
     width: 100%;
-    height: 270px;
+    height: 300px;
     border-radius: var(--border-radius);
 }
 
@@ -353,8 +348,8 @@
 
 /* CTA Penutup */
 #cta-penutup {
-    padding: 40px 10px;
-    background-color: var(--accent);
+    padding-top: 80px;
+    padding-bottom: 80px;
     color: var(--neutral);
 }
 
@@ -362,10 +357,10 @@
     background-color: var(--neutral);
     color: var(--accent);
     font-family: var(--font-2);
-    transition: var(--transition);
-    font-size: 24px;
-    padding: 12px 24px;
-    border-radius: var(--border-radius);
+    transition: var(--transition);;
+    font-size: 16px;
+    padding: 12px 60px;
     font-weight: 600;
+    position: relative;
 }
 /* End CTA Penutup */
