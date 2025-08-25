@@ -101,10 +101,15 @@ html, body {
     font-family: var(--font-2);
 }
 
+.navbar .nav-link:hover {
+    color: var(--accent);
+}
+
 .navbar .btn {
     font-size: 14px;
     padding: 8px 20px;
 }
+/* End Navbar */
 
 
 /* Footer */
@@ -121,4 +126,59 @@ footer {
     font-size: 14px;
     font-family: var(--font-2);
     color: var(--neutral);
+}
+/* End Footer */
+
+/* Tablet (Layar di bawah 992px) */
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        font-size: 22px;
+    }
+
+    .navbar .nav-link {
+        font-size: 16px;
+    }
+}
+
+/* Mobile (Layar di bawah 768px) */
+@media (max-width: 767.98px) {
+    /* Navbar */
+    .navbar {
+        background-color: #fff; /* Langsung beri background putih */
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .navbar .logo {
+        width: 40px; /* Perkecil logo */
+        height: auto;
+    }
+    .navbar-brand {
+        font-size: 20px; /* Perkecil nama brand */
+    }
+    .navbar .navbar-nav {
+        padding-top: 16px;
+        text-align: center; /* Menu dropdown jadi rata tengah */
+    }
+    .navbar .nav-item {
+        margin-left: 0 !important;
+        padding: 8px 0;
+    }
+
+    /* === BUTTONS === */
+    .btn {
+        padding: 10px 16px; /* Kurangi padding tombol */
+        font-size: 14px;
+    }
+    .btn-secondary {
+        padding: 12px 20px;
+    }
+
+    /* === FOOTER === */
+    footer {
+        text-align: center;
+    }
+    .footer-copyright {
+        font-size: 13px; /* Perkecil font copyright */
+        padding: 24px 16px;
+    }
 }

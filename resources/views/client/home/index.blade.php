@@ -2,7 +2,8 @@
     <header id="hero">
         <div class="container">
             <div class="row align-items-center justify-content-center text-center text-lg-start">
-                <section class="col-lg-7">
+                
+                <section class="col-lg-7 animate-on-scroll fade-in-left">
                     <h1 class="header-1 color-navy fw-bold mb-0">Service Laptop</h1>
                     <h1 class="header-1 color-accent fw-bold mb-4">Cepat, Jujur, dan Bergaransi</h1>
                     <img src="{{ asset('images\HeroImage.png') }}" class="img-fluid d-lg-none hero-img" alt="Teknisi sedang bekerja">
@@ -11,9 +12,11 @@
                         <i class="fab fa-whatsapp me-2"></i>Consult with Us
                     </a>
                 </section>
-                <section class="col-lg-5 d-none d-lg-block">
+
+                <section class="col-lg-5 d-none d-lg-block animate-on-scroll fade-in-right">
                     <img src="{{ asset('images\HeroImage.png') }}" class="img-fluid mb-32 mx-auto d-block hero-img" alt="Teknisi sedang bekerja">
                 </section>
+
             </div>
         </div>
     </header>
@@ -22,8 +25,8 @@
         <div class="container">
             <h2 class="header-2 color-navy fw-bold mb-5 text-center">Kenapa Memilih Kami?</h2>
             <div class="row gy-4">
-                <div class="col-md-3 col-6">
-                    <div class="keunggulan-item-box">
+                <div class="col-6 col-md-6 col-lg-3">
+                    <div class="keunggulan-item-box animate-on-scroll fade-in-up">
                         <div class="keunggulan-ic-container flex-shrink-0 me-2 ">
                             <img src="{{ asset('images/garansi.png') }}" class="img-fluid" alt="garansi">
                         </div> 
@@ -34,8 +37,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-6">
-                    <div class="keunggulan-item-box">
+                <div class="col-6 col-md-6 col-lg-3">
+                    <div class="keunggulan-item-box animate-on-scroll fade-in-up delay-1">
                         <div class="keunggulan-ic-container flex-shrink-0 me-2 ">
                             <img src="{{ asset('images/teknisi.png') }}" class="img-fluid" alt="teknisi">
                         </div>
@@ -46,8 +49,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-6">
-                    <div class="keunggulan-item-box">
+                <div class="col-6 col-md-6 col-lg-3">
+                    <div class="keunggulan-item-box animate-on-scroll fade-in-up delay-2">
                         <div class="keunggulan-ic-container flex-shrink-0 me-2">
                             <img src="{{ asset('images/gear.png') }}" class="img-fluid" alt="sparepart">
                         </div>
@@ -58,8 +61,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-6">
-                    <div class="keunggulan-item-box">
+                <div class="col-6 col-md-6 col-lg-3">
+                    <div class="keunggulan-item-box animate-on-scroll fade-in-up delay-3">
                         <div class="keunggulan-ic-container flex-shrink-0 me-2">
                             <img src="{{ asset('images/konsul.png') }}" class="img-fluid" alt="konsultasi">
                         </div>
@@ -75,10 +78,10 @@
 
     <section id="layanan">
         <div class="container">
-            <h2 class="header-2 color-navy fw-bold mb-2 text-center">Semua Kebutuhan Service dalam Satu Tempat</h2>
-            <p class="body-1 color-navy fw-normal mb-5 text-center">Solusi lengkap untuk semua masalah perangkat elektronik Anda</p>
+            <h2 class="header-2 color-navy fw-bold mb-2 text-center animate-on-scroll fade-in-up">Semua Kebutuhan Service dalam Satu Tempat</h2>
+            <p class="body-1 color-navy fw-normal mb-5 text-center animate-on-scroll fade-in-up delay-1">Solusi lengkap untuk semua masalah perangkat elektronik Anda</p>
 
-            <div class="glide-layanan">
+            <div class="glide-layanan animate-on-scroll fade-in-up delay-2">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
                         <li class="glide__slide">
@@ -141,7 +144,7 @@
  
     <section id="alur" style="background-image: url('{{ asset('images/BGalur.png') }}');">
         <div class="container">
-            <div class="row gx-4 gy-4"> 
+            <div class="row gx-4 gy-4 animate-on-scroll fade-in-left"> 
                 <div class="col-lg-4">
                     <h2 class="header-2 color-neutral fw-bold mb-3">3 Langkah Mudah Layanan Kami</h2>
                     <p class="body-1 color-neutral fw-normal">Ikuti alur sederhana kami untuk mendapatkan layanan perbaikan yang cepat dan efisien.</p>
@@ -150,7 +153,7 @@
                 <div class="col-lg-8">
                     <div class="row aligm-items-start gx-4 gy-4">
 
-                        <div class="col-md-4 mb-3 ">
+                        <div class="col-md-4 mb-3 animate-on-scroll fade-in-up">
                             <div class="card border-0 text-center h-100">
                                 <div class="card-body p-4">
                                     <div class="justify-content-center d-flex mb-2">
@@ -162,7 +165,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-4 mb-3 animate-on-scroll fade-in-up delay-1">
                             <div class="card border-0 text-center h-100">
                                 <div class="card-body p-4">
                                     <div class="justify-content-center d-flex mb-2">
@@ -174,7 +177,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-4 mb-3 animate-on-scroll fade-in-up delay-2">
                             <div class="card border-0 text-center h-100">
                                 <div class="card-body p-4">
                                     <div class="justify-content-center d-flex mb-2">
@@ -194,10 +197,10 @@
     <section id="proses">
         <div class="container">
             <div class="row gx-4 gy-4 justify-content-center">
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6 animate-on-scroll fade-in-left">
                     <div class="card h-100 shadow">
                         <div class="card-body">
-                            <h4 class="card-title header-4 color-accent fw-semibold mb-4 text-center">Lihat Proses Pengerjaan Teknisi Kami</h4>
+                            <h4 class="card-title header-4 color-navy fw-semibold mb-4 text-center">Lihat Proses Pengerjaan Teknisi Kami</h4>
                             <div class="embed-responsive embed-responsive-16by9 justify-content-center d-flex mb-2">
                                 <iframe class="embed-responsive-item mb-3" src="https://www.youtube.com/embed/OBBMF_9oD5g?si=G8AqVrmW8rOFdgIJ" allowfullscreen></iframe>
                             </div>
@@ -206,10 +209,10 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6 animate-on-scroll fade-in-right">
                     <div class="card h-100 shadow">
                         <div class="card-body">
-                            <h4 class="card-title header-4 color-accent fw-semibold mb-4 text-center">Lihat Proses Pengerjaan Teknisi Kami</h4>
+                            <h4 class="card-title header-4 color-navy fw-semibold mb-4 text-center">Lihat Proses Pengerjaan Teknisi Kami</h4>
                             <div class="embed-responsive embed-responsive-16by9 justify-content-center d-flex mb-2">
                                 <iframe class="embed-responsive-item mb-3" src="https://www.youtube.com/embed/3edtMfPl_kM?si=InXH8nmx5KUx2XbN" allowfullscreen></iframe>
                             </div>
@@ -268,9 +271,9 @@
 
     <section id="testimoni"style="background-image: url('{{ asset('images/BGtesti.png') }}'); ">
         <div class="container">
-            <h2 class="header-2 color-neutral fw-bold mb-5 text-center">Apa Kata Pelanggan Kami?</h2>
+            <h2 class="header-2 color-neutral fw-bold mb-5 text-center animate-on-scroll fade-in-up">Apa Kata Pelanggan Kami?</h2>
 
-            <div class="glide-testimoni">
+            <div class="glide-testimoni animate-on-scroll fade-in-up delay-1">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
                         <li class="glide__slide">
@@ -324,11 +327,12 @@
     <section id="tentang-kami">
         <div class="container">
             <div class="row align-items-center gy-4">
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-none d-lg-block animate-on-scroll fade-in-left">
                     <img src="{{ asset('images\aboutUS.png') }}" class="img-fluid tim-img" alt="Tim Teknisi">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 animate-on-scroll fade-in-right">
                     <h2 class="header-2 color-navy fw-bold mb-3">Tentang Kami</h2>
+                    <img src="{{ asset('images\aboutUS.png') }}" class="img-fluid d-lg-none tim-img mb-3" alt="Teknisi sedang bekerja">
                     <p class="body-1 color-navy">Kami adalah tim teknisi laptop profesional yang berdedikasi untuk memberikan layanan terbaik sejak 2010. Dengan pengalaman bertahun-tahun dan ribuan laptop yang telah kami tangani, kami mengutamakan kejujuran, transparansi, dan kualitas.</p>
                     <p class="body-1 color-navy">Kami percaya bahwa laptop Anda bukan sekadar alat kerja, tapi aset penting yang harus dijaga. Setiap perangkat memiliki cerita dan memori berharga bagi pemiliknya. Itulah mengapa kami memperlakukan setiap perbaikan dengan penuh perhatian dan profesionalisme.</p>
                     <p class="body-1 color-navy">Tim kami terdiri dari teknisi bersertifikat yang terus mengikuti perkembangan teknologi terbaru. Kami menggunakan alat diagnostik mutakhir dan komponen berkualitas tinggi untuk memastikan laptop Anda kembali berfungsi optimal.</p>
@@ -357,7 +361,7 @@
             <h2 class="header-2 color-navy fw-bold mb-1 text-center">Hubungi Kami</h2>
             <p class="body-1 color-navy fw-normal mb-5 text-center">Hubungi kami untuk pemesanan layanan service atau kunjungi workshop kami untuk perbaikan langsung</p>
             <div class="row gy-5 justify-content-center">
-                <div class="col-lg-5 ">
+                <div class="col-lg-5 animate-on-scroll fade-in-left">
                     <div class="card h-100">
                         <div class="card-body">
                             <h3 class="header-4 color-navy fw-semibold mb-5">Formulir Pemesanan Service</h3>
@@ -408,7 +412,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-5">
+                <div class="col-lg-5 animate-on-scroll fade-in-right">
                     <h3 class="header-4 color-navy fw-semibold mb-4">Informasi Kontak</h3>
                     <div class="d-flex mb-3">
                         <i class="fab fa-whatsapp fa-2x color-accent me-2"></i>
@@ -474,6 +478,19 @@
                     }
                 }).mount();
             });
+            // Kode untuk Animasi On-Scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, {
+                threshold: 0.1 // Elemen dianggap terlihat jika 10% areanya masuk layar
+            });
+
+            const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
+            elementsToAnimate.forEach((el) => observer.observe(el));
         </script>
     @endpush
 </x-client.layout>
