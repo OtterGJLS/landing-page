@@ -358,7 +358,6 @@
 
 /* Tablet (Layar di bawah 992px) */
 @media (max-width: 991.98px) {
-    /* Posisikan panah slider agar tidak terlalu keluar */
     .glide-layanan .glide__arrow--left,
     .glide-testimoni .glide__arrow--left {
         left: -10px;
@@ -376,19 +375,18 @@
 
 /* Mobile (Layar di bawah 767.98px) */
 @media (max-width: 767.98px) {
-    /* Mengurangi padding di semua section agar tidak terlalu banyak ruang kosong */
+    
     #hero, #keunggulan, #layanan, #alur, #proses, #promo, #testimoni, #tentang-kami, #kontak, #cta-penutup {
         padding-top: 60px;
         padding-bottom: 60px;
     }
 
     #hero {
-        padding-top: 100px; /* Lebih banyak padding top di hero untuk navbar */
+        padding-top: 100px; 
     }
 
     /* Keunggulan Section */
     .keunggulan-item-box {
-        /* Agar ikon dan teks jadi di tengah di mode mobile */
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -401,29 +399,29 @@
     /* Panah slider di Layanan dan Testimoni */
     .glide-layanan .glide__arrow,
     .glide-testimoni .glide__arrow {
-        /* Sembunyikan panah di HP karena bisa swipe */
         display: none;
     }
+
     #layanan .card-title {
-    font-size: 1.1rem; /* Perkecil font judul layanan */
+    font-size: 1.1rem;
     margin-bottom: 0.5rem !important;
     }
 
     #layanan .card p {
-        font-size: 0.9rem; /* Perkecil font deskripsi layanan */
+        font-size: 0.9rem; 
     }
 
     /* Spesifik untuk Card Testimoni */
     #testimoni .card-title {
-        font-size: 1rem; /* Perkecil font nama pelanggan */
+        font-size: 1rem;
     }
 
-    #testimoni .text-warning { /* Ini adalah div pembungkus bintang */
-        margin-bottom: 0.5rem !important; /* Kurangi jarak antara bintang dan nama */
+    #testimoni .text-warning {
+        margin-bottom: 0.5rem !important; 
     }
 
-    #testimoni .text-warning .fas.fa-star { /* Ini menargetkan ikon bintangnya */
-        font-size: 0.9rem; /* Perkecil ukuran bintang */
+    #testimoni .text-warning .fas.fa-star { 
+        font-size: 0.9rem; 
     }
 
     /* Alur Section */
@@ -432,56 +430,56 @@
     }
 
     #alur .card-body {
-    padding: 1.5rem 1.25rem; /* Kurangi padding dari 32px menjadi 24px atas-bawah dan 20px kiri-kanan */
+    padding: 1.5rem 1.25rem; 
     }
 
     #alur .card img {
-        max-height: 50px; /* Membuat gambar/ikon menjadi lebih kecil */
+        max-height: 50px; 
     }
 
     #alur .card h4 {
-        font-size: 1.1rem; /* Sedikit perkecil ukuran font judul */
-        margin-bottom: 0.5rem !important; /* Mengurangi jarak di bawah judul */
+        font-size: 1.1rem; 
+        margin-bottom: 0.5rem !important; 
     }
 
     #alur .card p {
-        font-size: 0.9rem; /* Sedikit perkecil font paragraf */
-        line-height: 1.4; /* Atur tinggi baris agar tetap nyaman dibaca */
+        font-size: 0.9rem; 
+        line-height: 1.4; 
     }
 
     /* Proses Section */
     #proses .card .card-body iframe {
-        width: 100%; /* Iframe video jadi full-width */
+        width: 100%; 
         height: 180px;
     }
 
-    /* === PROMO SECTION === */
+    /* PROMO SECTION */
     #promo ul {
-        padding-left: 24px; /* Atur posisi list */
+        padding-left: 24px;
     }
 
-    /* === TENTANG KAMI SECTION === */
+    /* TENTANG KAMI SECTION */
     #tentang-kami {
         text-align: center;
     }
     #tentang-kami .col-lg-6 {
-        text-align: left; /* Biarkan teks tetap rata kiri */
+        text-align: left; 
     }
     
-    /* === CTA PENUTUP SECTION === */
+    /* CTA PENUTUP SECTION */
     #cta-penutup h1 {
-        font-size: 24px; /* Perkecil font judul CTA */
+        font-size: 24px;
     }
 
-    /* === KONTAK SECTION === */
+    /* KONTAK SECTION */
     #kontak iframe {
-        height: 250px; /* Atur tinggi peta */
+        height: 250px; 
     }
     #kontak .card-body {
         padding: 24px;
     }
     #kontak .form-label {
-        font-size: 14px; /* Perkecil label form */
+        font-size: 14px;
     }
 }
 
@@ -509,7 +507,7 @@
 /* State akhir (saat .is-visible ditambahkan oleh JS) */
 .animate-on-scroll.is-visible {
     opacity: 1;
-    transform: none; /* Kembali ke posisi semula */
+    transform: none;
 }
 
 /* Untuk efek staggered (muncul satu per satu) */
